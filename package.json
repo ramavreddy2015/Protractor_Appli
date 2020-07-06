@@ -8,7 +8,9 @@
     "eyes.selenium": "^3.7.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "protractor \"conf.js\"",
+    "webdriverupdate": "webdriver-manager update",
+    "webdriverstart": "webdriver-manager start"
   },
   "author": "",
   "license": "ISC"

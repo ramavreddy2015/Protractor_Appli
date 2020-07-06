@@ -14,7 +14,7 @@ describe('Capital One', function() {
      browser.ignoreSynchronization = true;
 
      eyes.setLogHandler(new ConsoleLogHandler(true));
-     eyes.setApiKey(process.env.APPLITOOLS_KEY);
+     eyes.setApiKey("U0DkCUCfhZ5ubyMDEiE101AT9FDeN3hUzJhX3NVCnWRGs110");
      eyes.setForceFullPageScreenshot(true);
      eyes.setStitchMode(StitchMode.CSS);
      console.log("My Batch ID: " + batchId)

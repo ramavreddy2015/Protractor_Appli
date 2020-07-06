@@ -14,7 +14,7 @@ describe('Capital One', function() {
      browser.ignoreSynchronization = true;
 
      eyes.setLogHandler(new ConsoleLogHandler(true));
-     eyes.setApiKey(process.env.APPLITOOLS_KEY);
+     eyes.setApiKey("U0DkCUCfhZ5ubyMDEiE101AT9FDeN3hUzJhX3NVCnWRGs110");
      eyes.setForceFullPageScreenshot(true);
      eyes.setStitchMode(StitchMode.CSS);
 
@@ -28,7 +28,7 @@ describe('Capital One', function() {
   it('Journey Student', function(done) {
     
     eyes.open(browser, 'credit-card', 'journey-student-region', {width: 1400, height: 800})
-    eyes.setViewportSize({width: 1400, height: 800});
+    // eyes.setViewportSize({width: 1400, height: 800});
 
     var benefits = element(by.css('cs-benefits-container .benefits'));
     eyes.check("By Element", Target.region(benefits));
